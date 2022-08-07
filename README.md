@@ -1,4 +1,86 @@
-# Task-Manager-MERN-App
+<div align="center">
+  <h1>Welcome to Agility 👋💻</h1>
+  <h3>Live Website for Agility : <a href="#">Click Here!</a></h3>
+</div>
+
+<br>
+
+<p align="center">
+<a href="https://github.com/thisiskushal31/DTaxy-Ridesharing-app"><img src="https://img.shields.io/github/workflow/status/dwyl/auth_plug/Elixir%20CI?label=build&style=flat-square&logo=github"></a>
+<a href="https://github.com/thisiskushal31/DTaxy-Ridesharing-app"><img src="https://img.shields.io/website-up-down-green-red/http/fakesite.invalid.svg"></a>
+<a href="https://github.com/thisiskushal31/DTaxy-Ridesharing-app"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
+</p> 
+
+##  Repository
+
+<h3> About Agility </h3>
+Agilty is a task management tool that allows you to plan, organise, and prioritise all of your tasks so that you can complete them in the shortest amount of time possible.   
+
+##  Tech Stacks
+
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)![Nodejs](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)![Expressjs](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
+
+## Workflow Setup
+### Node
+
+-   #### Node installation on Windows
+
+    Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+    Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
+
+-   #### Node installation on Ubuntu
+
+    You can install nodejs and npm easily with apt install, just run the following commands.
+
+        $ sudo apt install nodejs
+        $ sudo apt install npm
+
+-   #### Other Operating Systems
+    You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
+
+If the installation was successful, you should be able to run the following command.
+
+    $ node --version
+    v8.11.3
+
+    $ npm --version
+    6.1.0
+
+If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
+
+    $ npm install npm -g
+
+## See Agility in action
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+## Folder Structure
+Folder structure of this project for your reference   
+```
+├── ...
+│   ├── ...
+│   ├── ...
+└── .gitignore
+└── ....
+```
+
+##  License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/thisiskushal31/DTaxy-Ridesharing-app/blob/main/LICENSE) file for details.
+
+## About Me
+
+I am CS Undergrad Student learning Full Stack Web Development by building projects. 
+
+## Lets Connect
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thisiskushalgupta/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/thisis_kushal)
+[![github](https://img.shields.io/badge/github-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thisiskushal31/)
 
 <!-- # Getting Started with Create React App
 
