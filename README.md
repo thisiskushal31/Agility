@@ -11,9 +11,8 @@
 <a href="https://github.com/thisiskushal31/DTaxy-Ridesharing-app"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
 </p> 
 
-##  Repository
+##  About Agility
 
-<h3> About Agility </h3>
 Agilty is a task management tool that allows you to plan, organise, and prioritise all of your tasks so that you can complete them in the shortest amount of time possible.   
 
 ##  Tech Stacks
