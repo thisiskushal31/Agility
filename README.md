@@ -77,7 +77,7 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 I am CS Undergrad Student learning Full Stack Web Development by building projects. 
 
-## Lets Connect
+## Let's Connect
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thisiskushalgupta/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/thisis_kushal)
 [![github](https://img.shields.io/badge/github-0d1117?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thisiskushal31/)
