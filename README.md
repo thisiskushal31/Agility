@@ -6,9 +6,9 @@
 <br>
 
 <p align="center">
-<a href="https://github.com/thisiskushal31/DTaxy-Ridesharing-app"><img src="https://img.shields.io/github/workflow/status/dwyl/auth_plug/Elixir%20CI?label=build&style=flat-square&logo=github"></a>
-<a href="https://github.com/thisiskushal31/DTaxy-Ridesharing-app"><img src="https://img.shields.io/website-up-down-green-red/http/fakesite.invalid.svg"></a>
-<a href="https://github.com/thisiskushal31/DTaxy-Ridesharing-app"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
+<a href="https://github.com/thisiskushal31/Agility"><img src="https://img.shields.io/github/workflow/status/dwyl/auth_plug/Elixir%20CI?label=build&style=flat-square&logo=github"></a>
+<a href="https://github.com/thisiskushal31/Agility"><img src="https://img.shields.io/website-up-down-green-red/http/fakesite.invalid.svg"></a>
+<a href="https://github.com/thisiskushal31/Agility"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>
 </p> 
 
 ##  About Agility
