@@ -61,11 +61,34 @@ You may also see any lint errors in the console.
 ## Folder Structure
 Folder structure of this project for your reference   
 ```
-├── ...
-│   ├── ...
-│   ├── ...
-└── .gitignore
-└── ....
+.
+├── public                  # Manifest, favicon and HTML file so you can tweak it.
+├── src                     
+│   ├── assets              # all the assets i.e. files other then js
+│   ├── components          # All shared components such as buttons, checkboxes, etc. used throughout the project
+│       ├── form            # form components
+|       ├── ui              # ui components
+|       └── js_files        # Various components that do not fit the above file description 
+│   ├── context             # any kind of context will be here with their's test file
+│       ├── _test_            
+|       └── js_files        
+│   ├── data                # contains contanst's and json's
+│   ├── hooks               # all the hooks with their's test file
+│       ├── _test_          
+|       └── js_files        
+│   ├── pages               # Components specific to each section (this can be customized according to your requirements)
+│       ├── Home            # components that unique for Home with "_test_" inside
+│       ├── Login           # components that unique for Login with "_test_" inside
+│       ├── Settings        # components that unique for Setting with "_test_" inside
+|       └── Signup          # components that unique for Signup with "_test_" inside 
+│   ├── utils               # utility functions with their's test file
+│       ├── _test_          
+|       └── js_Files        
+│   └── CSS & JS Files      # all Utility Css & Js Files
+├── .gitignore              
+├── package-lock.json       
+├── package.json              
+└── Readme.md               # Project's Readme
 ```
 
 ##  License
