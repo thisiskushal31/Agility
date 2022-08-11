@@ -5,18 +5,18 @@ import Feature from "./components/Feature";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
-// import scrollreveal from "scrollreveal";
+import scrollreveal from "scrollreveal";
 import "./sass/index.scss";
 // import Feature from "./components/Feature";
 function App() {
   return (
     <div>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Navbar />
-      <Home />
-      <Feature />
-      <Clients />
-      <Footer />
+      {/* <Home /> */}
+      {/* <Feature /> */}
+      {/* <Clients /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
