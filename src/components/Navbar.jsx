@@ -16,16 +16,13 @@ export default function Navbar() {
         <div classname="nav-items">
           <ul className="nav-links">
             <li>
-              <button href="/Blog">Blog</button>
+              <button className="btn1 " href="/Blog"> SignUp </button>
             </li>
             <li className="nav-buttons">
-              <button href="/Login" className="btn1 nav-btn"> Login </button>
+              <button href="/Login" className="btn2 nav-btn"> Login </button>
             </li>
           </ul>
         </div>
-        {/* <div className="nav-buttons">
-          <a href="/Login" className="btn1 nav-btn"> Login </a>
-        </div> */}
       </div>
     </header>
   );

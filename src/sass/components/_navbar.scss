@@ -6,10 +6,10 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
     background-color: var(--background);
     width: 100%;
-    z-index: 20;
+    // z-index: 20;
 }
 
 .navbar-container {
@@ -51,7 +51,6 @@ header {
 
 .nav-links li {
     display: inline-block;
-    padding: 1rem;
 }
 
 .nav-links li button {
@@ -62,84 +61,31 @@ header {
 
 .nav-links li button:hover {
     background-color: gainsboro;
-    padding: var(--btn-padding);
-    border-radius: 5px;
+    padding: 8px 16px;
+    border-radius: 0.6em;
     color: var(--primary);
 }
 
-// .nav-buttons {
-//     display: flex;
-//     gap: 10px;
-// }
-
-// .nav-btn {
-//     cursor: pointer;
-//     color: var(--whitetext);
-//     font-size: 16px;
-//     padding: var(--btn-padding);
-//     border-radius: 4px;
-// }
-
 .btn1 {
+    background-color: var(--background);
+    cursor: pointer;
+    color: var(--whitetext);
+    font-size: 16px;
+    padding: var(--btn-padding);
+    border-radius: 4px;
+}
+
+.btn2 {
     border: 1px solid #52459F;
     border-radius: 10px;
     background-color: var(--primary);
 }
 
 .nav-btn {
-    // box-sizing: border-box;
-    // appearance: none;
-    // background-color: transparent;
-    border-radius: 0.6em;
     color: var(--whitetext);
     cursor: pointer;
-    // display: flex;
-    // align-self: center;
     font-size: 1rem;
     font-weight: 400;
-    // line-height: 1;
     margin: 10px;
     padding: 8px 16px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 700;
-
-    // &:hover,
-    // &:focus {
-    //     color: #fff;
-    //     outline: 0;
-    // }
 }
-
-// .btn1 {
-//     border-color: var(--primary);
-//     // border: 0;
-//     border-radius: 0;
-//     color: var(--whitetext);
-//     position: relative;
-//     overflow: hidden;
-//     z-index: 1;
-//     transition: color 150ms ease-in-out;
-
-//     &:after {
-//         content: '';
-//         position: absolute;
-//         display: block;
-//         top: 0;
-//         left: 50%;
-//         transform: translateX(-50%);
-//         width: 0;
-//         height: 100%;
-//         background: var(--primary);
-//         z-index: -1;
-//         transition: width 150ms ease-in-out;
-//     }
-
-//     &:hover {
-//         color: #fff;
-
-//         &:after {
-//             width: 110%;
-//         }
-//     }
-// }
