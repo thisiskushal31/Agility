@@ -1,5 +1,5 @@
 .hero {
-    margin-top: 6rem;
+    margin-top: 0rem;
 }
 
 .container {
@@ -24,12 +24,15 @@
 }
 
 .title {
+    font-family: 'Libre Baskerville', serif;
     color: var(--whitetext);
     width: 440px;
     height: 210px;
 }
 
 .description {
+    // font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', serif;
     color: var(--whitetext);
     width: 440px;
     height: 95px;
@@ -44,12 +47,15 @@
 .image {
     .hero-image{
         margin: 4rem 0rem 0rem -29rem;
-        position:absolute;
+        position: relative;
+        width: 125%;
+        float: right;
         z-index: 1;
     }
     .hero-shape{
         margin: 0rem 0rem 0rem -11rem;
-        position:absolute;
+        position: relative;
+        float: right;
         z-index: 0;
     }
 }

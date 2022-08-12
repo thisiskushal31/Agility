@@ -1,5 +1,5 @@
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     // box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.2);
@@ -29,6 +29,7 @@ header {
 }
 
 .nav-title {
+    // font-family: 'Libre Baskerville', serif;
     font-weight: var(--whitetext);
     font-size: 28px;
 }

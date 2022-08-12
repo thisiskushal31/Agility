@@ -7,9 +7,9 @@ export default function Hero() {
     <div className="hero">
       <div className="container">
         <div className="content">
-          <h1 className="title">Task-manager for small teams.</h1>
+          <h1 className="title">Task-manager for effective teams.</h1>
           <p className="description">
-            Agilty is a simple to-do list for small companies or teams.
+            Agilty is a simple to-do list for teams or businesses.
           </p>
           <div>
             <button class="CTA"> Get started for free <img class="arrow" src={Arrow} alt="Arrow" /></button>
