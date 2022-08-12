@@ -81,7 +81,7 @@ header {
 // }
 
 .btn1 {
-    border: 2px solid #52459F;
+    border: 1px solid #52459F;
     border-radius: 10px;
     background-color: var(--primary);
 }
@@ -99,47 +99,47 @@ header {
     font-weight: 400;
     // line-height: 1;
     margin: 10px;
-    padding: 1.2em 2.8em;
+    padding: 8px 16px;
     text-decoration: none;
     text-align: center;
     font-weight: 700;
 
-    &:hover,
-    &:focus {
-        color: #fff;
-        outline: 0;
-    }
+    // &:hover,
+    // &:focus {
+    //     color: #fff;
+    //     outline: 0;
+    // }
 }
 
-.btn1 {
-    border-color: var(--primary);
-    // border: 0;
-    border-radius: 0;
-    color: var(--whitetext);
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: color 150ms ease-in-out;
+// .btn1 {
+//     border-color: var(--primary);
+//     // border: 0;
+//     border-radius: 0;
+//     color: var(--whitetext);
+//     position: relative;
+//     overflow: hidden;
+//     z-index: 1;
+//     transition: color 150ms ease-in-out;
 
-    &:after {
-        content: '';
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 100%;
-        background: var(--primary);
-        z-index: -1;
-        transition: width 150ms ease-in-out;
-    }
+//     &:after {
+//         content: '';
+//         position: absolute;
+//         display: block;
+//         top: 0;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         width: 0;
+//         height: 100%;
+//         background: var(--primary);
+//         z-index: -1;
+//         transition: width 150ms ease-in-out;
+//     }
 
-    &:hover {
-        color: #fff;
+//     &:hover {
+//         color: #fff;
 
-        &:after {
-            width: 110%;
-        }
-    }
-}
+//         &:after {
+//             width: 110%;
+//         }
+//     }
+// }

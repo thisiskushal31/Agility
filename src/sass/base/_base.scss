@@ -88,15 +88,15 @@ button {
   cursor: pointer;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+// html {
+//   scroll-behavior: smooth;
+// }
 
 body {
   font-family: "Montserrat", sans-serif;
   color: var(--whitetext);
   font-size: 16px;
-  background-color: var(--background);
+  // background-color: var(--background);
   position: relative;
   z-index: 0;
 }
