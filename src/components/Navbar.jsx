@@ -8,12 +8,12 @@ export default function Navbar() {
   // const [navState, setNavState] = useState(false);
   return (
     <header>
-      <div className="container navbar-container">
+      <div className="navbar-container">
         <a href="/" className="logo-wrapper">
           <img src={logo} alt="logo" />
-          <h1 classname="nav-title">Agility</h1>
+          <h1 className="nav-title">Agility</h1>
         </a>
-        <div classname="nav-items">
+        <div className="nav-items">
           <ul className="nav-links">
             <li>
               <button className="btn1 " href="/Blog"> SignUp </button>

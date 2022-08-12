@@ -2,7 +2,7 @@
 // import Clients from "./components/Clients";
 // import Footer from "./components/Footer";
 // import Feature from "./components/Feature";
-// import Home from "./components/Home";
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 // import ScrollToTop from "./components/ScrollToTop";
 // import scrollreveal from "scrollreveal";
@@ -13,7 +13,7 @@ function App() {
     <div>
       {/* <ScrollToTop /> */}
       <Navbar />
-      {/* <Home /> */}
+      <Hero />
       {/* <Feature /> */}
       {/* <Clients /> */}
       {/* <Footer /> */}
