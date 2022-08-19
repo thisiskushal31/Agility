@@ -1,10 +1,10 @@
 import logo from "../assets/logo.svg";
-import llustration from "../assets/Illustrations.svg";
+import llustration from "../assets/illustration-intro.svg";
 export default function Navbar() {
   return (
     <header className="header">
-    <div className="header--bg"></div>
-    <div className="header--bgDown"></div>
+    <div class="header--bg"></div>
+    <div class="header--bgDown"></div>
     <section className="header__topMobile header--fixed" id="headerTop">
       <div className="header__topMobile--main">
         <a href="#" className="header__topMobile--brand">
@@ -60,7 +60,7 @@ export default function Navbar() {
             </li>
           </ul>
         </nav>
-        <button className="header__topDesktop--button">get started</button>
+        <button className="header__topDesktop--button">Login</button>
       </div>
     </section>
     <section className="header__home">

@@ -7,9 +7,16 @@
 }
 
 :root{
+
+    --font-family: 'Montserrat', serif;
+
+    //background
+    --Background: #1B1C31;
+    --Secondary-Background: #24243E;
+
     //color primary
-    --Bright-Red: #f25f3a; 
-    --Dark-Blue: #242d52;
+    --Primary: #52459F;
+    --Secondary: #85EAF6;
 
     //color neutral
     --Dark-Grayish-Blue: #9095a7 ;
@@ -18,9 +25,21 @@
     --Vary-Light-Gray: #fafafa;
     --white:#fff;
 
+    //font weight
+    --fw-200: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
     //animation
     --animation:0.5s;
     --animation01:1.5s;
+
+    //text colour
+    --white-text: #FFFFFF;
+    --black-text: #000000;
+    --Bright-Red: #f25f3a; 
+    --Dark-Blue: #242d52;
 }
 
 html{
@@ -30,6 +49,7 @@ html{
 body{
     font-size: 1rem;
     font-family: 'Be Vietnam Pro', sans-serif;
+    background: var(--background);
     overflow-x: hidden;
 }
 

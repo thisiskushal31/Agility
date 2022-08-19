@@ -6,7 +6,6 @@
         top: -110px;
         right: -50px;
         z-index: 80;
-        background-image: url(../assets/bg-tablet-pattern.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         max-width: 400px;
@@ -19,7 +18,6 @@
         bottom: -150px;
         right: -230px;
         z-index: 80;
-        background-image: url(../assets/bg-tablet-pattern.svg);
         background-repeat: no-repeat;
         background-size: 100%;
         max-width: 400px;
@@ -53,6 +51,7 @@
         }
 
         &--img {
+            text-decoration: none;
             display: block;
             width: 130px;
             object-fit: contain;
@@ -122,7 +121,7 @@
 
         &--link {
             text-transform: capitalize;
-            color: var(--Dark-Blue);
+            color: var(--whitetext);
             transition: var(--animation);
 
             &:hover,
@@ -150,9 +149,9 @@
         }
 
         &--img {
+            text-decoration: none;
             display: block;
-            width: 110px;
-            padding-top: 10px;
+            width: 120px;
         }
 
         &--button {
@@ -172,7 +171,7 @@
 
         &--link {
             text-transform: capitalize;
-            color: var(--Dark-Blue);
+            color: var(--whitetext);
             transition: var(--animation);
 
             &:hover,
@@ -185,7 +184,7 @@
     &__home {
         position: relative;
         z-index: 90;
-        margin-top: 97px;
+        margin-top: 105px;
 
         &--main {
             @include content-width;
@@ -207,7 +206,7 @@
             text-align: center;
             font-size: 2.2rem;
             text-transform: capitalize;
-            color: var(--Dark-Blue);
+            color: var(--whitetext);
         }
 
         &--paragraph {
@@ -298,7 +297,7 @@
         }
 
         &__home {
-            margin-top: 116px;
+            margin-top: 35px;
         }
 
         &__topDesktop {
