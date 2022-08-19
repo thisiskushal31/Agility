@@ -7,9 +7,6 @@
 }
 
 :root{
-
-    --font-family: 'Montserrat', serif;
-
     //background
     --Background: #1B1C31;
     --Secondary-Background: #24243E;
@@ -21,7 +18,7 @@
     //color neutral
     --Dark-Grayish-Blue: #9095a7 ;
     --Very-Dark-Blue: #1d1e25 ;
-    --Very-Pale-Red: #ffefeb ;
+    --Very-Pale-Red: #5b4444 ;
     --Vary-Light-Gray: #fafafa;
     --white:#fff;
 
@@ -49,7 +46,6 @@ html{
 body{
     font-size: 1rem;
     font-family: 'Be Vietnam Pro', sans-serif;
-    background: var(--Background);
     overflow-x: hidden;
 }
 

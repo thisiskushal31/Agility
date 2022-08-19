@@ -1,9 +1,10 @@
 .about {
+    background: var(--Secondary-Background);
     position: relative;
     z-index: 90;
 
     &__main {
-        padding-top: 100px;
+        padding: 50px 0px 30px 0px;
         position: relative;
         z-index: 90;
     }
@@ -33,7 +34,7 @@
 
         &--secondheading {
             text-align: center;
-            color: var(--Dark-Blue);
+            color: var(--white-text);
             width: 300px;
             margin: 0 auto;
             font-size: 2rem;
@@ -74,7 +75,7 @@
 
         &--smallheading {
             font-size: 0.9rem;
-            color: var(--Dark-Blue);
+            color: var(--white-text);
         }
 
         &--paragraph {
@@ -90,7 +91,6 @@
             bottom: -270px;
             left: -150px;
             z-index: 80;
-            background-image: url(../img/bg-tablet-pattern.svg);
             background-repeat: no-repeat;
             background-size: cover;
             max-width: 500px;
@@ -207,7 +207,7 @@
         }
 
         &__main {
-            padding-top: 147px;
+            padding: 50px 0px 50px 0px;
         }
     }
 }

@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-// import Feature from "./components/Feature";
+import About from "./components/About";
 // import Testimonial from "./components/Testimonial";
 // import Footer from "./components/Footer";
 // import scrollreveal from "scrollreveal";
@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Header />
-      {/* <Feature /> */}
+      <About />
       {/* <Testimonial /> */}
       {/* <Footer /> */}
     </div>

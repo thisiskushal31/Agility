@@ -1,4 +1,5 @@
 .header {
+    background: var(--Background);
     position: relative;
 
     &--bg {
@@ -34,6 +35,8 @@
     }
 
     &__topMobile {
+        background: var(--Background);
+
         &.show {
             background-color: var(--white-text);
         }
@@ -151,7 +154,7 @@
         &--img {
             text-decoration: none;
             display: block;
-            width: 120px;
+            width: 125px;
         }
 
         &--button {
@@ -217,14 +220,15 @@
         &--cta {
             @include button;
             align-self: center;
-            margin-top: 15px;
+            // margin-top: 15px;
+            margin: 11px;
         }
 
         &--img {
             display: block;
             max-width: 400px;
             width: 90%;
-            margin: 0 auto;
+            margin: 25px auto;
         }
     }
 
@@ -261,6 +265,7 @@
         }
 
         &__topMobile {
+            margin: 60px;
             display: none;
         }
 
@@ -297,7 +302,8 @@
         }
 
         &__home {
-            margin-top: 35px;
+            // margin-top: 35px;
+            margin: 25px 0px auto;
         }
 
         &__topDesktop {

@@ -3,8 +3,6 @@ import llustration from "../assets/illustration-intro.svg";
 export default function Navbar() {
   return (
     <header className="header">
-    <div class="header--bg"></div>
-    <div class="header--bgDown"></div>
     <section className="header__topMobile header--fixed" id="headerTop">
       <div className="header__topMobile--main">
         <a href="#" className="header__topMobile--brand">
