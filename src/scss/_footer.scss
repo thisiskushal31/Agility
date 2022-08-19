@@ -1,0 +1,217 @@
+.footer {
+    &--bg {
+        background-color: var(--Very-Dark-Blue);
+        padding: 53px 0;
+    }
+
+    &__main {
+        @include content-width;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "footerForm footerForm"
+            "footerNav footerNav"
+            "footerSc footerSc"
+            "footerLogo footerLogo"
+            "footerCredits footerCredits";
+        gap: 35px;
+    }
+
+    &__logo {
+        grid-area: footerLogo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__socialnetwork {
+        grid-area: footerSc;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 25px;
+
+        &--sc path {
+            transition: var(--animation);
+        }
+
+        &--sc:hover path {
+            fill: var(--Bright-Red);
+        }
+    }
+
+    &__navigation {
+        grid-area: footerNav;
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    &__menu,
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__menu--link,
+    &__nav--link {
+        color: var(--Vary-Light-Gray);
+        transition: var(--animation);
+
+        &:hover,
+        &:focus {
+            color: var(--Bright-Red);
+        }
+    }
+
+    &__form {
+        grid-area: footerForm;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--Item {
+            height: 45px;
+            transition: var(--animation);
+            position:relative;
+
+            &-check{
+                color:#5082bb;
+                position:absolute;
+                top:15px;
+                right:10px;
+                display:none;
+            }
+
+            &-wrong{
+                color: var(--Bright-Red);
+                    position: absolute;
+                    top: 15px;
+                    right: 10px;
+                    display: none;
+            }
+
+            &.valid{
+                outline:1px solid #5082bb;
+            }
+
+            &.valid &-check{
+                display:block;
+            }
+
+            &.invalid{
+                outline: 2px solid var(--Bright-Red);
+            }
+
+            &.invalid &-wrong{
+                display:block;
+            }
+
+            &:nth-child(1) {
+                width: 76%;
+                overflow: hidden;
+                border-radius: 32px;
+            }
+
+            &:nth-child(2) {
+                width: 20%;
+            }
+        }
+
+        &--input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            padding-left: 20px;      
+            
+            &.bgValid{
+                background-color:#5082bb93;
+                color:var(--white);
+            }
+
+            &.bgWrong{
+                background-color: #f25f3a88;
+                color:var(--white);
+            }
+
+            &:hover,
+            &:focus-visible {
+                border: none;
+                outline: none;
+            }
+        }
+
+        &--btn {
+            width: 100%;
+            height: 100%;
+            @include button;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__credits {
+        grid-area: footerCredits;
+        text-align: center;
+    }
+
+    &__bottom {
+        &--main {
+            padding-top: 25px;
+            @include content-width;
+            text-align: center;
+        }
+
+        &--cta {
+            color: var(--Dark-Grayish-Blue);
+            transition: var(--animation);
+
+            &:hover,
+            &:focus {
+                color: var(--Bright-Red);
+            }
+        }
+    }
+
+    @media screen and (min-width:992px) {
+        &__bottom {
+            &--main {
+                padding-top: 50px;
+            }
+        }
+
+        &__main {
+            @include content-width;
+            grid-template-columns: 20% 30% 1fr 1fr 10%;
+            grid-template-areas:
+                "footerLogo footerNav footerNav footerForm footerForm"
+                "footerSc footerNav footerNav footerCredits footerCredits";
+            gap: 35px;
+        }
+
+        &__logo {
+            grid-area: footerLogo;
+            justify-content: flex-start;
+        }
+
+        &__socialnetwork {
+            grid-area: footerSc;
+        }
+
+        &__navigation {
+            grid-area: footerNav;
+        }
+
+        &__form {
+            grid-area: footerForm;
+        }
+
+        &__credits {
+            grid-area: footerCredits;
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,102 @@
+@mixin content-width {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (min-width:1200px) {
+        max-width: 1100px;
+    }
+}
+
+@mixin grid-2-header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "itemOne"
+        "itemTwo";
+    gap: 25px;
+
+    @media screen and (min-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "itemTwo itemOne";
+        align-items: center;
+    }
+}
+
+@mixin grid-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "itemOne"
+        "itemTwo";
+    gap: 25px;
+
+    @media screen and (min-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "itemOne itemTwo";
+    }
+}
+
+@mixin button {
+    border:none;
+    display: inline-block;
+    background-color: var(--Bright-Red);
+    color: var(--white);
+    padding: 14px 28px;
+    border-radius: 32px;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    font-weight: 500;
+    -webkit-box-shadow: 0px 10px 14px -6px rgba(242, 95, 58, 0.55);
+    -moz-box-shadow: 0px 10px 14px -6px rgba(242, 95, 58, 0.55);
+    box-shadow: 0px 10px 14px -6px rgba(242, 95, 58, 0.55);
+    transition: var(--animation);
+
+    &:hover,
+    &:focus {
+        opacity: 0.7;
+        -webkit-box-shadow: 0px 10px 14px -6px rgba(242, 95, 58, 0.75);
+        -moz-box-shadow: 0px 10px 14px -6px rgba(242, 95, 58, 0.75);
+        box-shadow: 0px 10px 14px -6px rgba(242, 95, 58, 0.75);
+    }
+
+    @media screen and (min-width:992px){
+        padding: 18px 30px;
+    }
+}
+
+@mixin button-white {
+    border: none;
+    display: inline-block;
+    background-color: var(--white);
+    color:var(--Bright-Red);
+    padding: 14px 28px;
+    border-radius: 32px;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    font-weight: 500;
+    -webkit-box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.55);
+    transition: var(--animation);
+
+    &:hover,
+    &:focus {
+        opacity: 0.7;
+        -webkit-box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.75);
+    }
+
+    @media screen and (min-width:992px) {
+        padding: 18px 30px;
+    }
+}
+
+.swiper-pagination-bullet {
+    background: transparent;
+    border:2px solid var(--Bright-Red);
+}
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background-color: var(--Bright-Red);
+}

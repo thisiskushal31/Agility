@@ -1,0 +1,205 @@
+.testimonial {
+    padding-top: 77px;
+    position: relative;
+    z-index: 90;
+
+    &__top {
+        margin-bottom: 65px;
+        text-align: center;
+
+        &--secondheading {
+            color: var(--Dark-Blue);
+            font-size: 2rem;
+        }
+    }
+
+    &__middle {
+        padding: 0 0 50px;
+
+        &--slide {
+            padding: 0 20px;
+        }
+
+        &--picture {
+            position: relative;
+            top: 35px;
+        }
+
+        &--img {
+            display: block;
+            margin: 0 auto;
+            width: 75px;
+            height: 75px;
+        }
+
+        &--description {
+            background-color: var(--Vary-Light-Gray);
+            padding: 65px 10px 45px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+
+        &--middleheading {
+            color: var(--Dark-Blue);
+            font-weight: 500;
+        }
+
+        &--paragraph {
+            font-size: 0.95rem;
+            line-height: 1.6rem;
+        }
+    }
+
+    &__bottom {
+        margin-top: 50px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--cta {
+            @include button;
+            align-self: center;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &__middle {
+            &--slide {
+                padding: 0;
+            }
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-top: 154px;
+
+        &__middle {
+            &--description {
+                padding: 65px 20px 45px;
+            }
+
+            &--paragraph {
+                font-size: 0.85rem;
+            }
+        }
+
+        &__bottom {
+            margin-bottom: 178px;
+        }
+    }
+}
+
+.career {
+    position: relative;
+    overflow: hidden;
+    z-index: 80;
+
+    &--bg {
+        background-color: var(--Bright-Red);
+        padding: 100px 20px;
+    }
+
+    &--ellipse {
+        position: absolute;
+        bottom: -180px;
+        left: -390px;
+        z-index: 80;
+        background-image: url(../img/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 500px;
+        height: 500px;
+        opacity: 0.1;
+    }
+
+    &--ellipseOne {
+        display: none;
+    }
+
+    &__main {
+        @include content-width;
+        position: relative;
+        z-index: 90;
+    }
+
+    &__middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        &--secondheading {
+            color: var(--white);
+            font-size: 2.2rem;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        &--cta {
+            @include button-white;
+            align-self: center;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &--ellipse {
+            left: 110px;
+        }
+
+        &__middle {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            &--secondheading {
+                text-align: left;
+            }
+
+            &--cta {
+                align-self: flex-end;
+            }
+        }
+    }
+
+    @media screen and (min-width:992px) {
+        &--ellipse {
+            left: 160px;
+        }
+
+        &__middle {
+
+            &--secondheading {
+                font-size: 2.5rem;
+                width: 500px;
+            }
+
+            &--cta {
+                align-self: flex-end;
+            }
+        }
+    }
+
+    @media screen and (min-width:1200px) {
+        &--ellipse {
+            left: 260px;
+        }
+
+        &--ellipseOne {
+            display: block;
+            position: absolute;
+            top: -240px;
+            right: -260px;
+            z-index: 80;
+            background-image: url(../img/bg-tablet-pattern.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 400px;
+            height: 400px;
+            opacity: 0.1;
+        }
+    }
+}
