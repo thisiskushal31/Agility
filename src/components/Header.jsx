@@ -70,7 +70,7 @@ export default function Navbar() {
             together to build better products.
           </h1>
           <p className="header__home--paragraph">
-            Manage makes it simple for software teams to plan day-to-day
+            Agility makes it simple for software teams to plan day-to-day
             tasks while keeping the larger team goals in view.
           </p>
           <a href="#" className="header__home--cta">get started</a>
