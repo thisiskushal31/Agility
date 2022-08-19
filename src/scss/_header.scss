@@ -2,30 +2,6 @@
     background: var(--Background);
     position: relative;
 
-    &--bg {
-        position: absolute;
-        top: -110px;
-        right: -50px;
-        z-index: 80;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        max-width: 400px;
-        width: 95%;
-        height: 400px;
-    }
-
-    &--bgDown {
-        position: absolute;
-        bottom: -150px;
-        right: -230px;
-        z-index: 80;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        max-width: 400px;
-        width: 95%;
-        height: 400px;
-    }
-
     &--fixed {
         position: fixed;
         top: 0;
@@ -38,7 +14,7 @@
         background: var(--Background);
 
         &.show {
-            background-color: var(--white-text);
+            background-color: var(--white);
         }
 
         &--main {
@@ -108,7 +84,7 @@
         }
 
         &--menu {
-            background-color: var(--white-text);
+            background-color: var(--white);
             max-width: 400px;
             width: 90%;
             margin: 0 auto;
@@ -124,7 +100,7 @@
 
         &--link {
             text-transform: capitalize;
-            color: var(--white-text);
+            color: var(--white);
             transition: var(--animation);
 
             &:hover,
@@ -174,7 +150,7 @@
 
         &--link {
             text-transform: capitalize;
-            color: var(--white-text);
+            color: var(--white);
             transition: var(--animation);
 
             &:hover,
@@ -209,7 +185,7 @@
             text-align: center;
             font-size: 2.2rem;
             text-transform: capitalize;
-            color: var(--white-text);
+            color: var(--white);
         }
 
         &--paragraph {
@@ -302,7 +278,6 @@
         }
 
         &__home {
-            // margin-top: 35px;
             margin: 25px 0px auto;
         }
 
