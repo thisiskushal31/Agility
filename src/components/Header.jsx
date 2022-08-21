@@ -1,6 +1,26 @@
+import React, {useState} from "react";
 import logo from "../assets/logo.svg";
 import llustration from "../assets/illustration-intro.svg";
 export default function Navbar() {
+
+  // to change burger classes
+  const [header__topMobile_bar, setBurgerClass] = useState("burger-bar unclicked")
+  const [header__topMobile_nav, setMenuClass] = useState("menu hidden")
+  const [isMenuClicked, setIsMenuClicked] = useState(false)
+
+  // toggle burger menu change
+  const updateMenu = () => {
+      if(!isMenuClicked) {
+          setBurgerClass("burger-bar clicked")
+          setMenuClass("menu visible")
+      }
+      else {
+          setBurgerClass("burger-bar unclicked")
+          setMenuClass("menu hidden")
+      }
+      setIsMenuClicked(!isMenuClicked)
+  }
+
   return (
     <header className="header">
     <section className="header__topMobile header--fixed" id="headerTop">
@@ -8,12 +28,13 @@ export default function Navbar() {
         <a href="#" className="header__topMobile--brand">
           <img src={logo} alt="manage logo" className="header__topMobile--img"/>
         </a>
-        <button className="header__topMobile--burger" id="btnBurger">
-          <div className="header__topMobile--bar"></div>
-          <div className="header__topMobile--bar"></div>
-          <div className="header__topMobile--bar"></div>
+        <button onClick={updateMenu} className="header__topMobile_burger" id="btnBurger">
+          <div className={header__topMobile_bar}></div>
+          <div className={header__topMobile_bar}></div>
+          <div className={header__topMobile_bar}></div>
         </button>
-        <nav className="header__topMobile--nav" id="nav">
+        {/* <nav className="header__topMobile--nav" id="nav"> */}
+        <nav className={header__topMobile_nav} id="nav">
           <ul className="header__topMobile--menu">
             <li className="header__topMobile--list">
               <a href="#" className="header__topMobile--link">pricing</a>

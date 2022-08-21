@@ -79,7 +79,7 @@ export default function Footer() {
         </form>
         <div className="footer__copyright">
           <p className="footer__copyright--paragraph">
-              &copy; Copyright 2020. All Rights Reserved
+              &copy; Copyright 2022. All Rights Reserved
           </p>
         </div>
       </div>

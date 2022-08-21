@@ -79,14 +79,6 @@
             border: none;
             outline: none;
             padding-left: 20px;
-            &.bgValid {
-                background-color: #5082bb93;
-                color: var(--white);
-            }
-            &.bgWrong {
-                background-color: #f25f3a88;
-                color: var(--white);
-            }
             &:hover,
             &:focus-visible {
                 border: none;
