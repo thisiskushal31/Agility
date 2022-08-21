@@ -25,9 +25,6 @@ export default function Testimonial() {
       </div>
       {/* <div className="testimonial__middle--pagination swiper-pagination"></div> */}
     </div>
-    <div className="testimonial__bottom">
-      <a href="#" className="testimonial__bottom--cta">get started</a>
-    </div>
   </section>
   )
 }
