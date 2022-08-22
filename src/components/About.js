@@ -7,7 +7,7 @@ export default function Feature() {
       <div className="about__middle">
         <div className="about__middle--item">
           <div className="about__article">
-            <h2 className="about__article--secondheading">What’s different about Agility?</h2>
+            <h2 className="about__article--secondheading">Whats different about Agility?</h2>
             <p className="about__article--paragraph">
               Agility provides all the functionality your team needs, without
               the complexity. Our software is tailor-made for modern digital

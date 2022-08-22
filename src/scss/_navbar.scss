@@ -1,7 +1,6 @@
-.header {
+.navbar {
     background: var(--Background);
     position: relative;
-
     &--fixed {
         position: fixed;
         top: 0;
@@ -9,14 +8,11 @@
         width: 100%;
         z-index: 100;
     }
-
     &__topMobile {
         background: var(--Background);
-
         &.show {
             background-color: var(--white);
         }
-
         &--main {
             padding: 25px 0;
             @include content-width;
@@ -24,44 +20,36 @@
             justify-content: space-between;
             align-items: center;
         }
-
         &--brand {
             display: block;
         }
-
         &--img {
             text-decoration: none;
             display: block;
             width: 130px;
             object-fit: contain;
         }
-
         .burger-bar {
             border-radius: 0.5em;
             background-color: var(--Dark-Blue);
             width: 25px;
             height: 4px;
         }
-
         .burger-bar.clicked:nth-child(1){
             transform: rotate(45deg);
             transform-origin: 10% 10%;
         }
-
         .burger-bar.clicked:nth-child(2){
             opacity: 0;
         }
-
         .burger-bar.clicked:nth-child(3){
             transform: rotate(-45deg);
             transform-origin: 0% 45%;
         }
-
         .burger-bar.unclicked {
             transform: rotate(0) translate(0);
             transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
         }
-
         &_burger {
             display: flex;
             flex-direction: column;
@@ -74,11 +62,9 @@
         .hidden {
             display: none;
         }
-
         .visible {
             height: 100%;
         }
-
         .toggleMenu {
             top: 6.5625rem;
             max-width: 100%;
@@ -111,7 +97,6 @@
             text-transform: capitalize;
             color: var(--Primary);
             transition: var(--animation);
-
             &:hover,
             &:focus {
                 color: var(--Dark-Grayish-Blue);
@@ -125,44 +110,36 @@
         z-index: 100;
         padding: 25px 0;
         background: var(--Background);
-
         &--main {
             @include content-width;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
         &--brand {
             display: block;
         }
-
         &--img {
             text-decoration: none;
             display: block;
             width: 125px;
         }
-
         &--button {
             @include button;
         }
-
         &--nav {
             width: auto;
         }
-
         &--menu {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 35px;
         }
-
         &--link {
             text-transform: capitalize;
             color: var(--white);
             transition: var(--animation);
-
             &:hover,
             &:focus {
                 color: var(--Dark-Grayish-Blue);
@@ -170,126 +147,21 @@
         }
     }
 
-    &__home {
-        position: relative;
-        z-index: 90;
-        margin-top: 105px;
-
-        &--main {
-            @include content-width;
-            @include grid-2-header;
-        }
-
-        &--article {
-            grid-area: itemTwo;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        &--picture {
-            grid-area: itemOne;
-        }
-
-        &--firstheading {
-            text-align: center;
-            font-size: 2.2rem;
-            text-transform: capitalize;
-            color: var(--white);
-        }
-
-        &--paragraph {
-            text-align: center;
-            line-height: 1.6rem;
-        }
-
-        &--cta {
-            @include button;
-            align-self: center;
-            margin: 11px;
-        }
-
-        &--img {
-            display: block;
-            max-width: 400px;
-            width: 90%;
-            margin: 25px auto;
-        }
-    }
-
-    @media screen and (min-width:768px) {
-        &--bgDown {
-            display: none;
-        }
-
-        &__home {
-            &--article {
-                gap: 20px;
-            }
-
-            &--firstheading {
-                text-align: left;
-            }
-
-            &--paragraph {
-                text-align: left;
-            }
-
-            &--cta {
-                align-self: flex-start;
-            }
-        }
-    }
+    // @media screen and (min-width:768px) {
+    //      Add css when needed
+    // }
 
     @media screen and (min-width:992px) {
-        &--bg {
-            right: -150px;
-            max-width: 600px;
-            width: 95%;
-            height: 600px;
-        }
-
         &__topMobile {
             margin: 60px;
             display: none;
         }
-
         &__topDesktop {
             display: block;
-        }
-
-        &__home {
-            &--img {
-                max-width: unset;
-                width: 100%;
-            }
-
-            &--article {
-                max-width: 440px;
-            }
-
-            &--firstheading {
-                font-size: 3rem;
-            }
-
-            &--paragraph {
-                font-size: 1.2rem;
-                line-height: 2.2rem;
-            }
         }
     }
 
     @media screen and (min-width:1200px) {
-        &--bg {
-            right: -50px;
-            max-width: 700px;
-            height: 700px;
-        }
-
-        &__home {
-            margin: 25px 0px auto;
-        }
-
         &__topDesktop {
             padding: 56px 0 25px;
         }

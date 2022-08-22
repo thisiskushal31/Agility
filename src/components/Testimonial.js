@@ -13,7 +13,7 @@ export default function Testimonial() {
       <div className="testimonial__middle--main swiper-wrapper">
         <div className="testimonial__middle--slide swiper-slide">
           <figure className="testimonial__middle--picture">
-            <img src={Avatar} alt=" Anisha Li photo" className="testimonial__middle--img"/>
+            <img src={Avatar} alt="avatar" className="testimonial__middle--img"/>
           </figure>
           <div className="testimonial__middle--description">
             <p className="testimonial__middle--paragraph">
@@ -23,7 +23,6 @@ export default function Testimonial() {
           </div>
         </div>
       </div>
-      {/* <div className="testimonial__middle--pagination swiper-pagination"></div> */}
     </div>
   </section>
   )
