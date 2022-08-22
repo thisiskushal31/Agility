@@ -37,48 +37,26 @@
         }
 
         .burger-bar {
-            width: 4em;
-            height: 0.5em;
-            background-color: rgb(0, 183, 255);
             border-radius: 0.5em;
+            background-color: var(--Dark-Blue);
+            width: 25px;
+            height: 4px;
         }
 
-        .menu {
-            width: 50%;
-            height: 100vh;
-            background-color: rgb(154, 181,240);
-            position: absolute;
-            top: 0;
-            z-index: -1;
-        }
-
-        /* ------------- sliding menu ------------------ */
-        .hidden {
-            display: none;
-        }
-
-        .visible {
-            display: inherit;
-        }
-
-        /* ----- animations--------- */
-        /* clicked */
         .burger-bar.clicked:nth-child(1){
-            transform: rotate(45deg) translate(0.75em, 1.25em);
-            transition: ease-out 0.5s;
+            transform: rotate(45deg);
+            transform-origin: 10% 10%;
         }
 
         .burger-bar.clicked:nth-child(2){
-            transform: scale(0.1);
-            transition: ease-out 0.5s;
+            opacity: 0;
         }
 
         .burger-bar.clicked:nth-child(3){
-            transform: rotate(135deg) translate(-0.5em, 1em);
-            transition: ease-out 0.5s;
+            transform: rotate(-45deg);
+            transform-origin: 0% 45%;
         }
 
-        /* unclicked */
         .burger-bar.unclicked {
             transform: rotate(0) translate(0);
             transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
@@ -92,43 +70,25 @@
             border: none;
             padding-bottom: 5px;
         }
-
-        &_bar {
-            background-color: var(--Dark-Blue);
-            width: 25px;
-            height: 4px;
-            transition: var(--animation);
+        
+        .hidden {
+            display: none;
         }
 
-        &_bar:nth-child(1).active {
-            transform: rotate(45deg);
-            transform-origin: 10% 10%;
-        }
-
-        &_bar:nth-child(2).active {
-            opacity: 0;
-        }
-
-        &_bar:nth-child(3).active {
-            transform: rotate(-45deg);
-            transform-origin: 0% 45%;
+        .visible {
+            height: 100%;
         }
 
         .toggleMenu {
-            position: fixed;
-            top: 77px;
-            left: 0;
-            z-index: 110;
+            top: 6.5625rem;
             width: 100%;
-            height: 0;
             overflow: hidden;
+            left: 0;
+            height: 100vh;
+            position: absolute;
+            z-index: -1;
             transition: var(--animation01);
-            background: rgb(0, 0, 0);
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 11%, rgba(0, 0, 0, 0.4) 70%);
-
-            &.show {
-                height: 100%;
-            }
+            background: linear-gradient(180deg, rgba(1, 1, 1, 0.25) 11%, rgba(0, 0, 0, 0.4) 70%);
         }
 
         &--menu {
@@ -148,7 +108,7 @@
 
         &--link {
             text-transform: capitalize;
-            color: var(--white);
+            color: var(--Primary);
             transition: var(--animation);
 
             &:hover,
@@ -245,7 +205,6 @@
         &--cta {
             @include button;
             align-self: center;
-            // margin-top: 15px;
             margin: 11px;
         }
 
@@ -335,72 +294,3 @@
         }
     }
 }
-
-
-// /* ---------------- Navbar and burger menu ------------------ */
-// nav {
-//     width: 100%;
-//     height: 5em;
-//     background-color: rgb(37, 39, 53);
-//     display: flex;
-//     justify-content: flex-start;
-//     padding: 1em;
-// }
-
-// .burger-menu {
-//     height: 100%;
-//     width: 4em;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     justify-content: space-between;
-//     cursor: pointer;
-// }
-
-// .burger-bar {
-//     width: 4em;
-//     height: 0.5em;
-//     background-color: rgb(0, 183, 255);
-//     border-radius: 0.5em;
-// }
-
-// .menu {
-//     width: 50%;
-//     height: 100vh;
-//     background-color: rgb(154, 181,240);
-//     position: absolute;
-//     top: 0;
-//     z-index: -1;
-// }
-
-// /* ------------- sliding menu ------------------ */
-// .hidden {
-//     display: none;
-// }
-
-// .visible {
-//     display: inherit;
-// }
-
-// /* ----- animations--------- */
-// /* clicked */
-// .burger-bar.clicked:nth-child(1){
-//     transform: rotate(45deg) translate(0.75em, 1.25em);
-//     transition: ease-out 0.5s;
-// }
-
-// .burger-bar.clicked:nth-child(2){
-//     transform: scale(0.1);
-//     transition: ease-out 0.5s;
-// }
-
-// .burger-bar.clicked:nth-child(3){
-//     transform: rotate(135deg) translate(-0.5em, 1em);
-//     transition: ease-out 0.5s;
-// }
-
-// /* unclicked */
-// .burger-bar.unclicked {
-//     transform: rotate(0) translate(0);
-//     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
-// }

@@ -5,18 +5,18 @@ export default function Navbar() {
 
   // to change burger classes
   const [header__topMobile_bar, setBurgerClass] = useState("burger-bar unclicked")
-  const [header__topMobile_nav, setMenuClass] = useState("menu hidden")
+  const [header__topMobile_nav, setMenuClass] = useState("toggleMenu hidden")
   const [isMenuClicked, setIsMenuClicked] = useState(false)
 
   // toggle burger menu change
   const updateMenu = () => {
       if(!isMenuClicked) {
           setBurgerClass("burger-bar clicked")
-          setMenuClass("menu visible")
+          setMenuClass("toggleMenu visible")
       }
       else {
           setBurgerClass("burger-bar unclicked")
-          setMenuClass("menu hidden")
+          setMenuClass("toggleMenu hidden")
       }
       setIsMenuClicked(!isMenuClicked)
   }
