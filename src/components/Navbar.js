@@ -84,7 +84,6 @@ export default function Navbar() {
             </ul>
           </nav>
           <Link to="/login"> <button type="button" className="navbar__topDesktop--button">Login</button></Link>
-          {/* <Link to="/signup"> <button type="button" className="navbar__topDesktop--button">Signup</button></Link> */}
         </div>
       </section>  
     </header>
