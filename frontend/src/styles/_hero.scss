@@ -1,0 +1,85 @@
+.hero {
+    background: var(--Background);
+    position: relative;
+    &__home {
+        position: relative;
+        z-index: 90;
+        margin-top: 105px;
+        &--main {
+            @include content-width;
+            @include grid-2-header;
+        }
+        &--article {
+            grid-area: itemTwo;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &--picture {
+            grid-area: itemOne;
+        }
+        &--firstheading {
+            text-align: center;
+            font-size: 2.2rem;
+            text-transform: capitalize;
+            color: var(--white);
+        }
+        &--paragraph {
+            text-align: center;
+            line-height: 1.6rem;
+        }
+        &--cta {
+            @include button;
+            align-self: center;
+            margin: 11px;
+        }
+        &--img {
+            display: block;
+            max-width: 400px;
+            width: 90%;
+            margin: 25px auto;
+        }
+    }
+    @media screen and (min-width:768px) {
+        &__home {
+            margin-top: 95px;
+            &--article {
+                gap: 20px;
+            }
+            &--firstheading {
+                text-align: left;
+            }
+            &--paragraph {
+                text-align: left;
+            }
+            &--cta {
+                align-self: flex-start;
+            }
+        }
+    }
+    @media screen and (min-width:992px) {
+        &__home {
+            margin-top: 0px;
+            &--img {
+                max-width: unset;
+                width: 100%;
+            }
+            &--article {
+                max-width: 440px;
+            }
+            &--firstheading {
+                font-size: 3rem;
+            }
+            &--paragraph {
+                font-size: 1.2rem;
+                line-height: 2.2rem;
+            }
+        }
+    }
+    @media screen and (min-width:1200px) {
+        &__home {
+            margin-top: 0px;
+            margin: 0;
+        }
+    }
+}
