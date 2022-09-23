@@ -1,30 +1,17 @@
-// @import 'fonts';
-// @import 'normalize';
-// @import 'mixin';
+@import 'Utils/mixin';
+@import 'Utils/fonts';
+@import 'Utils/normalize';
 
-// @import 'navbar';
-// @import 'hero';
-// @import 'about';
-// @import 'testimonial';
-// @import 'footer';
+@import 'Home/navbar';
+@import 'Home/hero';
+@import 'Home/about';
+@import 'Home/testimonial';
+@import 'Home/footer';
 
-// @import 'login';
-// @import 'signup';
+@import 'Form/form';
 
-@import url(./Utils/_fonts.scss);
-@import url(./Utils/_normalize.scss);
-@import url(./Utils/_mixin.scss);
+@import 'Kanban/kanban';
 
-@import url(./Home/_navbar.scss);
-@import url(./Home/_hero.scss);
-@import url(./Home/_about.scss);
-@import url(./Home/_testimonial.scss);
-@import url(./Home/_footer.scss);
+@import 'Layout/layout';
 
-@import url(./Form/_form.scss);
-
-@import url(./ProductLayout/_layout.scss);
-
-@import url(./Kanban/_kanban.scss);
-
-@import url(./Todo/_todo.scss);
+@import 'Todo/todo';

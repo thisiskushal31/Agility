@@ -1,5 +1,5 @@
 import React from 'react'
-import Avatar from '../assets/avatar.png';
+import Avatar from '../../Assets/avatar.png';
 
 export default function Testimonial() {
   return (

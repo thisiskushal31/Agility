@@ -1,14 +1,16 @@
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
+import Home from "./Pages/Home/Home";
+import Login from "./Pages/Form/Login";
+import Signup from "./Pages/Form/Signup";
+import Kanban from "./Pages/Kanban/Kanban";
+import Todo from "./Pages/Todo/Todo";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./scss/main.scss";
+
+import "./Styles/main.scss";
+
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
         <div className="container">
           <Routes>
             <Route exact path="/" element={<Home />} />
