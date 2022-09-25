@@ -27,7 +27,7 @@ export default function Navbar() {
       <section className="navbar__topMobile navbar--fixed" id="headerTop">
         <div className="navbar__topMobile--main">
           <Link to="/" className="navbar__topMobile--brand">
-            <img src={logo} alt="manage logo" className="navbar__topMobile--img" />
+            <img src={logo} alt="logo" className="navbar__topMobile--img" />
           </Link>
           <button onClick={updateMenu} className="navbar__topMobile_burger" id="btnBurger">
             <div className={navbar__topMobile_bar}></div>

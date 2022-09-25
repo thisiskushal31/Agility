@@ -11,8 +11,8 @@ export default function Signup() {
             <input className="loginForm__input" type="text" placeholder="Email"/>
             <input className="loginForm__input" type="password" placeholder="Password"/>
             <input className="loginForm__input" type="password" placeholder="Retype Password"/>
-            <p class="login_not"> 
-              <span class="text">Already a member?</span> 
+            <p className="login_not"> 
+              <span className="text">Already a member?</span> 
               <Link to="/login"> <a href="/signup">Login</a></Link> 
             </p>
           <button className="loginForm__button">Submit</button>

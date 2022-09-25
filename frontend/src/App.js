@@ -1,8 +1,9 @@
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Form/Login";
 import Signup from "./Pages/Form/Signup";
-import Kanban from "./Pages/Kanban/Kanban";
-import Todo from "./Pages/Todo/Todo";
+
+// import Product from "./Pages/ProductLayout/Product";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./Styles/main.scss";
