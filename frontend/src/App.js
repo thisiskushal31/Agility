@@ -2,7 +2,7 @@ import Home from "./Pages/Home/Home";
 import Login from "./Pages/Form/Login";
 import Signup from "./Pages/Form/Signup";
 
-// import Product from "./Pages/ProductLayout/Product";
+import Product from "./Pages/ProductLayout/Product";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -17,6 +17,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/signup" element={<Signup />} />
+            <Route exact path="/product" element={<Product />} />
           </Routes>
         </div>
       </BrowserRouter>

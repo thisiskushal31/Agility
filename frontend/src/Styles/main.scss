@@ -1,17 +1,35 @@
-@import 'Utils/mixin';
-@import 'Utils/fonts';
-@import 'Utils/normalize';
+// @import 'Utils/mixin';
+// @import 'Utils/fonts';
+// @import 'Utils/normalize';
 
-@import 'Home/navbar';
-@import 'Home/hero';
-@import 'Home/about';
-@import 'Home/testimonial';
-@import 'Home/footer';
+// @import 'Home/navbar';
+// @import 'Home/hero';
+// @import 'Home/about';
+// @import 'Home/testimonial';
+// @import 'Home/footer';
 
-@import 'Form/form';
+// @import 'Form/form';
 
-@import 'Kanban/kanban';
+// @import 'Kanban/kanban';
 
-@import 'Layout/layout';
+// @import 'Layout/layout';
 
-@import 'Todo/todo';
+// @import 'Todo/todo';
+
+@import 'mixin';
+@import 'fonts';
+@import 'normalize';
+
+@import 'navbar';
+@import 'hero';
+@import 'about';
+@import 'testimonial';
+@import 'footer';
+
+@import 'form';
+
+@import 'kanban';
+
+@import 'layout';
+
+@import 'todo';
