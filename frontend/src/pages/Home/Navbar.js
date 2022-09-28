@@ -62,7 +62,7 @@ export default function Navbar() {
       <section className="navbar__topDesktop" id="headerTopDesktop">
         <div className="navbar__topDesktop--main">
           <Link to="/" className="navbar__topDesktop--brand">
-            <img src={logo} alt="Manage logo" className="navbar__topDesktop--img" />
+            <img src={logo} alt="Agility logo" className="navbar__topDesktop--img" />
           </Link>
           <nav className="navbar__topDesktop--nav">
             <ul className="navbar__topDesktop--menu">
