@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Sidebar } from './Sidebar';
 import { IconContext } from 'react-icons';
 
-function Navbar() {
+function ProNavbar() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
-        <div className='navbar'>
+        <div className='productNavbar'>
           <Link to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
@@ -42,4 +42,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default ProNavbar;
