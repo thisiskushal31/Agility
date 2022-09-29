@@ -1,12 +1,13 @@
-import Home from "./Pages_/Home/Home";
-import Login from "./Pages_/Form/Login";
-import Signup from "./Pages_/Form/Signup";
+import Home from "./Pages/Home/Home";
+import Login from "./Pages/Form/Login";
+import Signup from "./Pages/Form/Signup";
 
-import Workspace from "./Pages_/ProductLayout/Workspace";
-// import Kanban from "./Pages/Workspace/Kanban";
-// import List from "./Pages/Workspace/List";
-// import Users from "./Pages/Workspace/Users";
-// import Support from "./Pages/Workspace/Support";
+import Workspace from "./Pages/ProductLayout/Workspace";
+import Dashboard from "./Pages/Workspace/Dashboard";
+import Kanban from "./Pages/Workspace/Kanban";
+import List from "./Pages/Workspace/List";
+import Users from "./Pages/Workspace/Users";
+import Support from "./Pages/Workspace/Support";
 
 import "./Styles/main.scss";
 
@@ -21,11 +22,13 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/workspace/*" element={<Workspace />} />
-            {/* <Route path="kanban" element={<Kanban />} />
-            <Route path="list" element={List} />
-            <Route path="team" element={Users} />
-            <Route path="support" element={Support} /> */}
+            <Route path="/workspace" element={<Workspace />}>
+              <Route path="/workspace" element={<Dashboard />} />
+              <Route path="/workspace/board" element={<Kanban />} />
+              <Route path="/workspace/list" element={<List />} />
+              <Route path="/workspace/team" element={<Users />} />
+              <Route path="/workspace/support" element={<Support />} />
+            </Route>
           </Routes>
         </div>
       </BrowserRouter>
