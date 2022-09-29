@@ -21,8 +21,9 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/login" element={<Login />} />
             <Route exact path="/signup" element={<Signup />} />
-            <Route exact path="/workspace" element={<Workspace />}>
-              <Route path="kanban" element={<Kanban />} />
+
+            <Route exact path="/workspace" element={<Workspace />} >
+              <Route path="board" element={<Kanban />} />
               <Route path="list" element={<List />} />
               <Route path="team" element={<Users />} />
               <Route path="support" element={<Support />} />
