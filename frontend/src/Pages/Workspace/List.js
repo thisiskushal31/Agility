@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Todo() {
+function List() {
   return (
     <h1>Todo</h1>
   )
 }
+
+export default List
