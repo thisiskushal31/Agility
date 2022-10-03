@@ -1,35 +1,49 @@
-// @import 'Utils/mixin';
-// @import 'Utils/fonts';
-// @import 'Utils/normalize';
+@import 'Utils/mixin';
+@import 'Utils/fonts';
+@import 'Utils/normalize';
 
-// @import 'Home/navbar';
-// @import 'Home/hero';
-// @import 'Home/about';
-// @import 'Home/testimonial';
-// @import 'Home/footer';
+@import 'Home/navbar';
+@import 'Home/hero';
+@import 'Home/about';
+@import 'Home/testimonial';
+@import 'Home/footer';
 
-// @import 'Form/form';
+@import 'Form/form';
 
-// @import 'Kanban/kanban';
+@import 'ProductLayout/layout';
 
-// @import 'Layout/layout';
+@import 'Workspace/dashboard';
 
-// @import 'Todo/todo';
+@import 'KanbanBoard/kanban';
+@import 'KanbanBoard/kanbanCard';
+@import 'KanbanBoard/kanbanInputCard';
+@import 'KanbanBoard/kanbanInputContainer';
+@import 'KanbanBoard/kanbanList';
+@import 'KanbanBoard/kanbanTitle';
 
-@import 'mixin';
-@import 'fonts';
-@import 'normalize';
+@import 'Workspace/todo';
 
-@import 'navbar';
-@import 'hero';
-@import 'about';
-@import 'testimonial';
-@import 'footer';
+// @import 'mixin';
+// @import 'fonts';
+// @import 'normalize';
 
-@import 'form';
+// @import 'navbar';
+// @import 'hero';
+// @import 'about';
+// @import 'testimonial';
+// @import 'footer';
 
-@import 'layout';
+// @import 'form';
 
-@import 'dashboard';
-@import 'kanban';
-@import 'todo';
+// @import 'layout';
+
+// @import 'dashboard';
+
+// @import 'kanban';
+// @import 'kanbanCard';
+// @import 'kanbanInputCard';
+// @import 'kanbanInputContainer';
+// @import 'kanbanList';
+// @import 'kanbanTitle';
+
+// @import 'todo';

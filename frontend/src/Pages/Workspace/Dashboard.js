@@ -65,9 +65,9 @@ function Dashboard() {
                     <li><h3>You</h3><p>Hosted product meeting at 1:00 PM</p></li>
                     <li><h3>You</h3><p>Added new task to To-Do List</p></li>
                     <li><h3>John Walker</h3><p>Added new task</p></li>
-                    <li><h3>You</h3>Hosted meeting with ABC company</li>
-                    <li><h3>You</h3><p>Homepage Design for ABC product</p></li>
-                    <li><h3>You</h3><p>Re-Design XYZ App</p></li>
+                    <li><h3>You</h3><p>Hosted meeting with Company Representative</p></li>
+                    <li><h3>You</h3><p>Homepage Design for Client Product</p></li>
+                    <li><h3>You</h3><p>Schema For Backend</p></li>
                 </ul>
                 <a href="/workspace">See More</a>
             </div>

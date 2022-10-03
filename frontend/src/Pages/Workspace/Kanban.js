@@ -1,8 +1,11 @@
 import React from 'react'
+import KanbanBoard from "../KanbanBoard/KanbanBoard"
 
 function Kanban() {
   return (
-    <h1>Kanban</h1>
+    <div>  
+      <KanbanBoard/>
+    </div>
   )
 }
 
