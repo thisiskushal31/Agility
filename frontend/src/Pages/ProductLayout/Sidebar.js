@@ -18,12 +18,6 @@ export const Sidebar = [
     cName: 'nav-text'
   },
   {
-    title: 'Task List',
-    path: '/workspace/list',
-    icon: <IoIcons.IoIosPaper />,
-    cName: 'nav-text'
-  },
-  {
     title: 'Team',
     path: '/workspace/team',
     icon: <IoIcons.IoMdPeople />,

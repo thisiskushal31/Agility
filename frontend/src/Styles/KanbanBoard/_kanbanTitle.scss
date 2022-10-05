@@ -12,7 +12,7 @@
 }
 
 .editable-title-container {
-    // position: relative;
+    position: relative;
     display: flex;
 
     .editable-title {
@@ -21,6 +21,7 @@
         flex-grow: 1;
         font-size: 1.2rem;
         font-weight: bold;
+        color: var(--Very-Dark-Blue);
     }
 
     .list-button {

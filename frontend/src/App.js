@@ -5,9 +5,10 @@ import Signup from "./Pages/Form/Signup";
 import Workspace from "./Pages/ProductLayout/Workspace";
 import Dashboard from "./Pages/Workspace/Dashboard";
 import Kanban from "./Pages/Workspace/Kanban";
-import List from "./Pages/Workspace/List";
 import Users from "./Pages/Workspace/Users";
 import Support from "./Pages/Workspace/Support";
+
+import EditableTable from "./Pages/Workspace/Users_2";
 
 import "./Styles/main.scss";
 
@@ -25,8 +26,7 @@ function App() {
             <Route path="/workspace" element={<Workspace />}>
               <Route path="/workspace" element={<Dashboard />} />
               <Route path="/workspace/board" element={<Kanban />} />
-              <Route path="/workspace/list" element={<List />} />
-              <Route path="/workspace/team" element={<Users />} />
+              <Route path="/workspace/team" element={<EditableTable />} />
               <Route path="/workspace/support" element={<Support />} />
             </Route>
           </Routes>
