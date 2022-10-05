@@ -9,6 +9,7 @@ const EditableRow = ({
     <tr>
       <td>
         <input
+          className="userInput"
           type="text"
           required="required"
           placeholder="Enter a name..."
@@ -19,6 +20,7 @@ const EditableRow = ({
       </td>
       <td>
         <input
+          className="userInput"
           type="text"
           required="required"
           placeholder="Enter an address..."
@@ -29,6 +31,7 @@ const EditableRow = ({
       </td>
       <td>
         <input
+          className="userInput"
           type="text"
           required="required"
           placeholder="Enter a phone number..."
@@ -39,6 +42,7 @@ const EditableRow = ({
       </td>
       <td>
         <input
+          className="userInput"
           type="email"
           required="required"
           placeholder="Enter an email..."
@@ -46,7 +50,10 @@ const EditableRow = ({
           value={editFormData.email}
           onChange={handleEditFormChange}
         ></input>
+      </td>
+      <td>
         <input
+          className="userInput"
           type="position"
           required="required"
           placeholder="Enter an position..."

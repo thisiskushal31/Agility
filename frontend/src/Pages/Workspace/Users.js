@@ -118,7 +118,7 @@ const Users = () => {
     
         return (
         <div className="userContainer">
-            <form onSubmit={handleEditFormSubmit}>
+            <form className="UserTable" onSubmit={handleEditFormSubmit}>
             <table>
                 <thead>
                 <tr>
@@ -152,44 +152,63 @@ const Users = () => {
             </table>
             </form>
     
-            <h2>Add a Contact</h2>
-            <form onSubmit={handleAddFormSubmit}>
-            <input
-                type="text"
-                name="name"
-                required="required"
-                placeholder="Enter a name..."
-                onChange={handleAddFormChange}
-            />
-            <input
-                type="text"
-                name="address"
-                required="required"
-                placeholder="Enter an addres..."
-                onChange={handleAddFormChange}
-            />
-            <input
-                type="text"
-                name="phoneNumber"
-                required="required"
-                placeholder="Enter a phone number..."
-                onChange={handleAddFormChange}
-            />
-            <input
-                type="email"
-                name="email"
-                required="required"
-                placeholder="Enter an email..."
-                onChange={handleAddFormChange}
-            />
-            <input
-                type="position"
-                name="position"
-                required="required"
-                placeholder="Enter an position..."
-                onChange={handleAddFormChange}
-            />
-            <button type="submit">Add</button>
+            <h2>Add New Employee</h2>
+            <form className="UserTable" onSubmit={handleAddFormSubmit}>
+                <tr>
+                    <td>
+                    <input
+                        className="userInput"
+                        type="text"
+                        name="name"
+                        required="required"
+                        placeholder="Enter a name..."
+                        onChange={handleAddFormChange}
+                    />
+                    </td>
+                    <td>
+                    <input
+                        className="userInput"
+                        type="text"
+                        name="address"
+                        required="required"
+                        placeholder="Enter an addres..."
+                        onChange={handleAddFormChange}
+                    />
+                    </td>
+                    <td>
+                    <input
+                        className="userInput"
+                        type="text"
+                        name="phoneNumber"
+                        required="required"
+                        placeholder="Enter a phone number..."
+                        onChange={handleAddFormChange}
+                    />
+                    </td>
+                    <td>
+                    <input
+                        className="userInput"
+                        type="email"
+                        name="email"
+                        required="required"
+                        placeholder="Enter an email..."
+                        onChange={handleAddFormChange}
+                    />
+                    </td>
+                    <td>
+                    <input
+                        className="userInput"
+                        type="position"
+                        name="position"
+                        required="required"
+                        placeholder="Enter an position..."
+                        onChange={handleAddFormChange}
+                    />
+                    </td>
+                    <td>
+                        <button className="userButton" type="submit">Add</button>
+                    </td>
+                </tr>
             </form>
         </div>
         );

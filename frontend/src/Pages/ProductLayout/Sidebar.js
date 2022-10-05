@@ -1,5 +1,6 @@
 import React from 'react';
 
+import * as FaIcons from 'react-icons/fa';
 import * as IoIcons from 'react-icons/io';
 import * as BsIcons from "react-icons/bs";
 import * as RiIcons from "react-icons/ri";
@@ -24,9 +25,9 @@ export const Sidebar = [
     cName: 'nav-text'
   },
   {
-    title: 'Support',
-    path: '/workspace/support',
-    icon: <IoIcons.IoMdHelpCircle />,
+    title: 'Sign Out',
+    path: '/',
+    icon: <FaIcons.FaSignOutAlt />,
     cName: 'nav-text'
   }
 ];

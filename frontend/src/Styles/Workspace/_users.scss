@@ -4,7 +4,12 @@
     padding: 0 10px;
     margin: 0 auto;
     margin-top: 70px;
+    color: #ccc;
 }
+
+// .UserTable {
+//     border-radius: 20%;
+// }
 
 .title {
     text-align: center;
@@ -28,23 +33,27 @@ tr th {
 tr td {
     border: 1px solid #eeeeee;
     text-align: left;
+    background-color: #8e78b2;
+    width: 14.8125rem;
 }
 
-input {
+.userInput {
     font-size: 16px;
-    background-color: transparent;
+    background: #ccc;
+    background-color: #0000;
     border: none;
-    width: 91%;
-    padding: 12px 12px;
+    width: 100%;
+    padding: 1.875rem 2.5rem;
 }
 
-input:hover {
+.userInput:hover {
     background-color: #fffaf3;
 }
 
-input:focus {
+.userInput:focus {
     outline: 1px solid #ccc;
     border: 1px solid #ccc;
+    background: #ccc;
 }
 
 .userButton {
@@ -55,7 +64,7 @@ input:focus {
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    width: 40%;
+    width: 90%;
     text-align: center;
     background-color: #561db2;
     color: white;
