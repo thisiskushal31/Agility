@@ -91,7 +91,7 @@ Folder structure of this project for your reference
 └── Readme.md               # Project's Readme
 ```
 
-##  License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/thisiskushal31/DTaxy-Ridesharing-app/blob/main/LICENSE) file for details.
 
