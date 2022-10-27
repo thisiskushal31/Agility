@@ -1,6 +1,6 @@
 import Home from "./Pages/Home/Home";
 import Login from "./Pages/Form/Login";
-import Register from "./Pages/Form/Signup";
+import Register from "./Pages/Form/Register";
 
 import Workspace from "./Pages/ProductLayout/Workspace";
 import Dashboard from "./Pages/Workspace/Dashboard";
@@ -10,6 +10,7 @@ import Users from "./Pages/Workspace/Users";
 import "./Styles/main.scss";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (

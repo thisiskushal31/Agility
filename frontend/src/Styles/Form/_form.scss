@@ -119,3 +119,48 @@ $transition: 1.25s;
     }
 }
 
+.form-container {
+    background-color: white;
+    padding: 1rem 3rem;
+    padding-bottom: 2rem;
+    border-radius: 0.5rem;
+    border-top: rgb(80, 98, 255) 0.5rem solid;
+}
+.form-header {
+    margin: 1rem 0;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.form-body div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form-body input {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid gray;
+    font-size: 1.1rem;
+}
+
+.form-body button {
+    background-color: rgb(80, 98, 255);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.form-body span a {
+    text-decoration: none;
+    color: rgb(80, 98, 255);
+}

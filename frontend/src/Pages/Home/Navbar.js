@@ -53,7 +53,7 @@ export default function Navbar() {
               </li>
               <li>
                 <Link to="/login"> <button type="button" className="navbar__topDesktop--button">Login</button></Link>
-                <Link to="/signup"> <button type="button" className="navbar__topDesktop--button">Signup</button></Link>
+                <Link to="/register"> <button type="button" className="navbar__topDesktop--button">Signup</button></Link>
               </li>
             </ul>
           </nav>

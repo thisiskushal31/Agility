@@ -14,7 +14,7 @@ export default function Hero(){
                   Agility makes it simple for software teams to plan day-to-day
                   tasks while keeping the larger team goals in view.
                 </p>
-                <Link to="/signup" className="hero__home--cta">get started</Link>
+                <Link to="/register" className="hero__home--cta">get started</Link>
               </div>
               <figure className="hero__home--picture">
                 <img src={llustration} alt="Graphics" className="hero__home--img" />
