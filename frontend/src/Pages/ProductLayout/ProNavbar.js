@@ -13,7 +13,7 @@ function ProNavbar() {
 
   const logOut = () => {
     removeCookie("jwt");
-    navigate("/login");
+    navigate("/");
   };
 
   const [sidebar, setSidebar] = useState(false);
