@@ -3,6 +3,8 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import { useCookies } from "react-cookie";
 import { Link, useNavigate } from "react-router-dom";
+import logo from "../../Assets/logo.svg";
+
 function Register() {
   const [cookies] = useCookies(["cookie-name"]);
   const navigate = useNavigate();
@@ -33,7 +35,7 @@ function Register() {
           if (email) generateError(email);
           else if (password) generateError(password);
         } else {
-          navigate("/");
+          navigate("/workspace");
         }
       }
     } catch (ex) {
@@ -41,39 +43,41 @@ function Register() {
     }
   };
   return (
-    <div className="form-container">
-      <h2 className="form-header">Register Account</h2>
-      <form onSubmit={(e) => handleSubmit(e)} className="form-body">
-        <div>
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            onChange={(e) =>
-              setValues({ ...values, [e.target.name]: e.target.value })
-            }
-          />
-        </div>
-        <div>
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            onChange={(e) =>
-              setValues({ ...values, [e.target.name]: e.target.value })
-            }
-          />
-        </div>
-        <button type="submit">Submit</button>
-        <span>
-          Already have an account ?<Link to="/login"> Login</Link>
-        </span>
-      </form>
-      <ToastContainer />
+    <>
+    <div className="Form_Background">
+      <div className="Form_container" id="login_container">
+        <form className="Form" id="form" onSubmit={(e) => handleSubmit(e)} >
+          <div className="Form_icon">
+            <Link to="/"><img src={logo} alt="logo" className="Form_icon--img" /></Link>
+          </div>
+          <h2 className="Form_title form_title">Register Account</h2>
+            <input className="Form__input" 
+              type="email"
+              name="email"
+              placeholder="Email"
+              onChange={(e) =>
+                setValues({ ...values, [e.target.name]: e.target.value })
+              }
+            />
+            <input className="Form__input" 
+              type="password"
+              placeholder="Password"
+              name="password"
+              onChange={(e) =>
+                setValues({ ...values, [e.target.name]: e.target.value })
+              }
+            />
+            <p className="Form_not"> 
+              <span className="text">Already a member?</span> 
+              <Link to="/login"> <a href="/login">Login</a></Link> 
+            </p>
+          <button className="Form__button">Submit</button>
+        </form>
+      </div>
     </div>
-  );
+    <ToastContainer />
+    </>
+  )
 }
 
 export default Register;

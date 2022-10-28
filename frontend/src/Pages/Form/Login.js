@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import { ToastContainer, toast } from "react-toastify";
+import logo from "../../Assets/logo.svg";
 
 function Login() {
   const [cookies] = useCookies([]);
@@ -34,7 +35,7 @@ function Login() {
           if (email) generateError(email);
           else if (password) generateError(password);
         } else {
-          navigate("/");
+          navigate("/workspace");
         }
       }
     } catch (ex) {
@@ -42,39 +43,39 @@ function Login() {
     }
   };
   return (
-    <div className="container">
-      <h2>Login to your Account</h2>
-      <form onSubmit={(e) => handleSubmit(e)}>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            onChange={(e) =>
-              setValues({ ...values, [e.target.name]: e.target.value })
-            }
-          />
-        </div>
-        <div>
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            placeholder="Password"
-            name="password"
-            onChange={(e) =>
-              setValues({ ...values, [e.target.name]: e.target.value })
-            }
-          />
-        </div>
-        <button type="submit">Submit</button>
-        <span>
-          Don't have an account ?<Link to="/register"> Register </Link>
-        </span>
-      </form>
+    <div className="Form_Background">
+      <div className="Form_container" id="login_container">
+        <form className="Form" id="form" onSubmit={(e) => handleSubmit(e)} >
+          <div className="Form_icon">
+            <Link to="/"><img src={logo} alt="logo" className="Form_icon--img" /></Link>
+          </div>
+          <h2 className="Form_title form_title">Login to your Account</h2>
+          <input className="Form__input" 
+              type="email"
+              name="email"
+              placeholder="Email"
+              onChange={(e) =>
+                setValues({ ...values, [e.target.name]: e.target.value })
+              }
+            />
+            <input className="Form__input" 
+              type="password"
+              placeholder="Password"
+              name="password"
+              onChange={(e) =>
+                setValues({ ...values, [e.target.name]: e.target.value })
+              }
+            />
+          <p className="Form_not"> 
+            <span className="text">Don't have an account ?</span> 
+            <Link to="/register"> Register </Link> 
+          </p>
+          <button className="Form__button">Submit</button>
+        </form>
+      </div>
       <ToastContainer />
     </div>
-  );
+  )
 }
 
 export default Login;
