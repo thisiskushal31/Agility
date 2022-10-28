@@ -8,8 +8,10 @@ Agilty is a task management tool that allows you to plan, organise, and prioriti
 
 ## Features
 
-- Pages Designed inspired by Modern UI
-- Login and Register Using MongoDB
+- Modern UI/UX-inspired responsive pages
+- Express.js for connecting frontend to backend
+- Login and Register Using MongoDB using JSON Web Token keep user logged in using stored cookie
+- Use of safe login so the only logged in used can view `\workspace` contains
 - Kanban Board with flexibility of Remove and Add using local storage
 - User/Team Member Remove and Add
 
@@ -88,7 +90,7 @@ You may also see any lint errors in the console.
 
 **OR**, 
 
-This [video]() shows this project live.
+This [video](https://youtu.be/v2W6W7GKgro) shows this project live.
 
 ## Folder Structure
 
