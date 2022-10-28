@@ -1,13 +1,17 @@
 <div align="center">
   <h1>Welcome to Agility 👋💻</h1>
-  <h3>Live Website for Agility : <a href="#">Click Here!</a></h3>
 </div>
-
-<br>
 
 ##  About Agility
 
 Agilty is a task management tool that allows you to plan, organise, and prioritise all of your tasks so that you can complete them in the shortest amount of time possible.   
+
+## Features
+
+- Pages Designed inspired by Modern UI
+- Login and Register Using MongoDB
+- Kanban Board with flexibility of Remove and Add using local storage
+- User/Team Member Remove and Add
 
 ##  Tech Stacks
 
@@ -44,127 +48,108 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     $ npm install npm -g
 
 ## See Agility in action
-### `npm start`
 
+Firstly, we need to install all the dependencies in the backend and frontend folders
+
+**For Frontend**   
+```
+cd frontend
+yarn
+```   
+**For Backend**   
+```
+cd backend
+yarn
+```    
+> Since npm gives some errors in this project, I recommend using yarn as the package manager.
+
+Secondly, we need add `.env` file in `backend` folder in below format
+```
+MONGO_URI="<Your_MongoDB_URI>"
+FRONTEND_ORIGIN="http://localhost:3000"
+JWT_TOKEN="<your_jwt_token>"
+```
+Thirdly, run in local environment
+
+**For Frontend**   
+```
+yarn start
+```   
+**For Backend**   
+```
+yarn start
+``` 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Open [http://localhost:3000](http://localhost:3000) to view it in your browser.   
+- Backend running at [http://localhost:4000](http://localhost:4000) to test Login and Register API.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+**OR**, 
+
+This [video]() shows this project live.
+
 ## Folder Structure
-Folder structure of this project for your reference   
+
+**Frontend Folder structure**   
 ```
 .
 ├── public                  # Manifest, favicon and HTML file so you can tweak it.
 ├── src                     
-│   ├── assets              # all the assets i.e. files other then js
-│   ├── components          # All shared components such as buttons, checkboxes, etc. used throughout the project
-│       ├── form            # form components
-|       ├── ui              # ui components
-|       └── js_files        # Various components that do not fit the above file description 
-│   ├── context             # any kind of context will be here with their's test file
-│       ├── _test_            
-|       └── js_files        
-│   ├── data                # contains contanst's and json's
-│   ├── hooks               # all the hooks with their's test file
-│       ├── _test_          
-|       └── js_files        
-│   ├── pages               # Components specific to each section (this can be customized according to your requirements)
-│       ├── Home            # components that unique for Home with "_test_" inside
-│       ├── Login           # components that unique for Login with "_test_" inside
-│       ├── Settings        # components that unique for Setting with "_test_" inside
-|       └── Signup          # components that unique for Signup with "_test_" inside 
-│   ├── utils               # utility functions with their's test file
-│       ├── _test_          
-|       └── js_Files        
-│   └── CSS & JS Files      # all Utility Css & Js Files
-├── .gitignore              
-├── package-lock.json       
-├── package.json              
-└── Readme.md               # Project's Readme
+│   ├── Assets              # all the assets i.e. files other then js  
+│   ├── pages               # Components specific to each section called in App.js
+│       ├── Form          
+│       ├── Home          
+│       ├── KanbanBoard
+│           ├── Utils
+|           └── Component Regarding Kanban Board     
+│       ├── ProductLayout        
+│       ├── User        
+|       └── Workspace  
+│   ├── Styles              # All Styles Files in respective folder compiled by scss
+│       ├── Form          
+│       ├── Home          
+│       ├── KanbanBoard          
+│       ├── ProductLayout        
+│       ├── Utils        
+│       ├── Workspace        
+|       └── main.scss
+│   ├── App.js
+│   └── index.js            
+├── yarn.lock     
+└── package.json              
+```   
+
+**Backend Folder structure**   
+
 ```
+.
+├── controller             
+├── middlewares
+├── model 
+├── routes
+├── .env 
+├── index.js
+├── yarn.lock     
+└── package.json              
+```   
+
+## Scope of Improvement
+
+- Better UI at Dashboard, Kanban, Teams.
+- REST API for functions in Kanban, Dashboard, Teams.
+- User Respective Data to be shown after login.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/thisiskushal31/DTaxy-Ridesharing-app/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/thisiskushal31/Agility/blob/main/LICENSE) file for details.
 
 ## About Me
 
-I am CS Undergrad Student learning Full Stack Web Development by building projects. 
+I am a passionate programmer with a keen interest in Full Stack Web Development, Cloud and DevOps Emerging Technologies, and attempting to solve problems with software.
 
 ## Let's Connect
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thisiskushalgupta/)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/thisis_kushal)
 [![github](https://img.shields.io/badge/github-3d4653?style=for-the-badge&logo=github&logoColor=white)](https://github.com/thisiskushal31/)
-
-<!-- # Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
