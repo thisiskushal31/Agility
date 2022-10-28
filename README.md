@@ -12,7 +12,7 @@ Agilty is a task management tool that allows you to plan, organise, and prioriti
 - Express.js for connecting frontend to backend
 - Login and Register Using MongoDB using JSON Web Token keep user logged in using stored cookie
 - Use of safe login so the only logged in used can view `\workspace` contains
-- Kanban Board with flexibility of Remove and Add using local storage
+- Kanban board's ability to add and remove cards and lists from local storage. 
 - User/Team Member Remove and Add
 
 ##  Tech Stacks
