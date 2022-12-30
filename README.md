@@ -6,6 +6,10 @@
 
 Agilty is a task management tool that allows you to plan, organise, and prioritise all of your tasks so that you can complete them in the shortest amount of time possible.   
 
+## Agility Live Preview
+
+![Agility-Live-Preview](./assets/Agility_Demo.gif)
+
 ## Features
 
 - Modern UI/UX-inspired responsive pages
